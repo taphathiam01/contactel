@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="sn.esp.dgi.master2.todolist" version="1.0.0"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>DOIt</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+
+    <!-- Permissions spécifiques Android -->
+    <platform name="android">
+        <edit-config file="AndroidManifest.xml" mode="merge" target="uses-permission">
+            <uses-permission android:name="android.permission.READ_CONTACTS" />
+        </edit-config>
+        <edit-config file="AndroidManifest.xml" mode="merge" target="uses-permission">
+            <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+        </edit-config>
+    </platform>
+    <platform name="ios">
+    <config-file parent="NSContactsUsageDescription" platform="ios" target="*-Info.plist">
+        <string>L'application a besoin d'accéder à vos contacts pour les afficher.</string>
+    </config-file>
+    </platform>
+
+
+    <!-- Autoriser les accès Web -->
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+</widget>
