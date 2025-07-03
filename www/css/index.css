@@ -1,0 +1,17 @@
+
+        .contact-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .contact-name {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .contact-phone {
+            color: #666;
+            font-size: 14px;
+        }
+        .loading {
+            text-align: center;
+            padding: 20px;
+        }
