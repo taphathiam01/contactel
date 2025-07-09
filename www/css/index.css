@@ -1,17 +1,7 @@
-
-        .contact-item {
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-        }
-        .contact-name {
-            font-weight: bold;
-            font-size: 16px;
-        }
-        .contact-phone {
-            color: #666;
-            font-size: 14px;
-        }
-        .loading {
-            text-align: center;
-            padding: 20px;
-        }
+.avatar {
+    width: 50px;        /* Largeur fixe */
+    height: 50px;       /* Hauteur fixe */
+    border-radius: 50%;  /* Rend l'image ronde */
+    object-fit: cover;   /* Garantit que l'image couvre tout l'espace sans déformation */
+    margin-right: 15px;  /* Espacement entre l'image et le texte */
+}
