@@ -1,7 +1,6 @@
 .avatar {
-    width: 50px;        /* Largeur fixe */
-    height: 50px;       /* Hauteur fixe */
-    border-radius: 50%;  /* Rend l'image ronde */
-    object-fit: cover;   /* Garantit que l'image couvre tout l'espace sans déformation */
+    max-width: 50%;
+    height: auto;
+    max-width: 300px;
     margin-right: 15px;  /* Espacement entre l'image et le texte */
 }

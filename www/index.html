@@ -28,13 +28,6 @@
                         <div class="loading">Chargement des contacts...</div>
                     </div>
                 </li>
-                <li>
-                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-                <img src="img/pngegg.png"  alt="logo" />
-                <h2>tapha</h2>
-                <p>77 44 22 11</p>
-                </a>
-                </li>
             </ul>
         </div>
         <div data-role="footer" data-position="fixed">
@@ -42,6 +35,40 @@
         </div>
     </div>
 
+    <!-- Ajoutez cette nouvelle page pour l'ajout de contact -->
+<div id="addContactPage" data-role="page">
+    <div data-role="header">
+        <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="notext">Retour</a>
+        <h1>Nouveau contact</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <form id="addContactForm">
+            <div class="ui-field-contain">
+                <label for="firstName">Prénom:</label>
+                <input type="text" name="firstName" id="firstName">
+                
+                <label for="lastName">Nom:</label>
+                <input type="text" name="lastName" id="lastName">
+                
+                <label for="phoneNumber">Téléphone:</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber">
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                
+                <label for="organization">Organisation:</label>
+                <input type="text" name="organization" id="organization">
+                
+                <label for="title">Titre:</label>
+                <input type="text" name="title" id="title">
+            </div>
+            <button type="submit" class="ui-btn ui-btn-b">Enregistrer</button>
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <h1>contactel &copy; 2025</h1>
+    </div>
+</div>
                             <!-- Contact detail page -->
     <div id="detailContactPage" data-role="page">
         <div data-role="header">
