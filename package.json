@@ -22,8 +22,8 @@
       "ios"
     ],
     "plugins": {
-      "cordova-plugin-contacts": {},
-      "cordova-plugin-android-permissions": {}
+      "cordova-plugin-android-permissions": {},
+      "cordova-plugin-contacts": {}
     }
   }
 }

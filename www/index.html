@@ -62,7 +62,7 @@
                 <label for="title">Titre:</label>
                 <input type="text" name="title" id="title">
             </div>
-            <button type="submit" class="ui-btn ui-btn-b">Enregistrer</button>
+            <button type="submit" class="save">Enregistrer</button>
         </form>
     </div>
     <div data-role="footer" data-position="fixed">
@@ -77,9 +77,9 @@
         </div>
         <div role="main" class="ui-content">
             <div data-role="header">
-                <a href="#" data-role="button" data-icon="edit" data-iconpos="notext">Modifier</a>
+                <a href="#" id="editContactBtn" data-role="button" data-icon="edit" data-iconpos="notext">Modifier</a>
                 <h1>contact Details</h1>
-                <a href="#"  data-role="button" data-icon="delete" data-iconpos="notext">Supprimer</a>
+                <a href="#" id="deleteContactBtn" data-role="button" data-icon="delete" data-iconpos="notext">Supprimer</a>
             </div>
             <div role="main" class="ui-content">
                 <ul id="contactDetailsList" data-role="listview" data-inset="true">

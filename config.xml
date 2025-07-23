@@ -25,6 +25,23 @@
     </config-file>
     </platform>
 
+    <platform name="ios">
+    <!-- Description obligatoire pour l'accès aux contacts -->
+    <edit-config target="NSContactsUsageDescription" file="*-Info.plist" mode="merge">
+        <string>L'application a besoin d'accéder à vos contacts pour les gérer (lire, modifier et supprimer)</string>
+    </edit-config>
+    
+    <!-- Nécessaire pour iOS 10+ -->
+    <config-file parent="NSContactsUsageDescription" target="*-Info.plist">
+        <string>Nous avons besoin d'accéder à vos contacts pour vous permettre de les gérer</string>
+    </config-file>
+    
+    <!-- Spécification de la version du plugin Contacts -->
+    <plugin name="cordova-plugin-contacts" spec="^3.0.1">
+        <variable name="CONTACTS_USAGE_DESCRIPTION" value="Pour gérer vos contacts" />
+    </plugin>
+    </platform>
+
 
     <!-- Autoriser les accès Web -->
     <allow-intent href="http://*/*" />
